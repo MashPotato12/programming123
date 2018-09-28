@@ -10,12 +10,20 @@ package review;
  * @author Student
  */
 public class Review {
+public static int power(double base, int exponent){
+    int total = 1;
+        for (int i = 1; i <= exponent; i++) {
+            total *= base;
+ 
+            
+        }
+        return total;
+ 
 
-    /**
-     * @param args the command line arguments
-     */
+}
     public static void main(String[] args) {
-        System.out.println("wowowowiiie");
+        int temp = power (4,3);
+        System.out.println(temp);
     }
     
 }
