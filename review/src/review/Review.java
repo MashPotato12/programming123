@@ -11,13 +11,10 @@ package review;
  */
 public class Review {
 public static int power(double base, int exponent){
-    int total = 1;
-        for (int i = 1; i <= exponent; i++) {
-            total *= base;
- 
-            
+    if(exponent == 0){
+            return 1;
         }
-        return total;
+        return (int) (base * power(base,exponent - 1));
  
 
 }
